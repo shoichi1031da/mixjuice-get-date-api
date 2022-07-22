@@ -21,7 +21,7 @@ const nowDate = () => {
     return now;
 }
 
-app.get("/" || "",(req,res) => {
+app.get("/",(req,res) => {
     let sendDate = "";
     let index = 0;
     if(req.query.i)index = req.query.i;
