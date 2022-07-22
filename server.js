@@ -14,10 +14,10 @@ const nowDate = () => {
     let month = date.getMonth() + 1  + "\n";
     let day = date.getDate() + "\n";
     let hour = (date.getHours() + 9) % 24 + "\n";
-    let minite = date.getMinutes() + "\n";
+    let minute = date.getMinutes() + "\n";
     let second = date.getSeconds() + "\n";
 
-    let now = [year,month,day,hour,minite,second];
+    let now = [year,month,day,hour,minute,second];
     return now;
 }
 
