@@ -4,7 +4,7 @@
 
 以下のコマンドをIchigoJam（MixJuice）もしくはIchigoJam web（仮想MixJuice）で実行してください。
 
-?"MJ GETS mixjuice-get-date.herokuapp.com"
+?"MJ GETS mixjuice-get-date.herokuapp.com/"
 
 ### IchigoJamの配列に下記の日時データが格納されます。
 <ul>
@@ -20,7 +20,7 @@
 
 例）i=50の場合
 
-?"MJ GETS mixjuice-get-date.herokuapp.com?i=50"
+?"MJ GETS mixjuice-get-date.herokuapp.com/?i=50"
 
 <ul>
 <li>[50]:年</li>
