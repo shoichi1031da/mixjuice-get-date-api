@@ -8,12 +8,12 @@ app.use(cors({
 }));
 
 const nowDate = () => {
-    let date = new Date();
+    let date = new Date()
 
     let year = date.getFullYear() + "\n";
     let month = date.getMonth() + 1  + "\n";
     let day = date.getDate() + "\n";
-    let hour = date.getHours() + "\n";
+    let hour = date.getHours() + 9 + "\n";
     let minite = date.getMinutes() + "\n";
     let second = date.getSeconds() + "\n";
 
