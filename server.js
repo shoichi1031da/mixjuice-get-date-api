@@ -1,6 +1,11 @@
-let express = require("express");
-let app = express();
-let PORT = process.env.PORT || 3000;
+const express = require("express");
+const app = express();
+const PORT = process.env.PORT || 3000;
+const cors = require("cors");
+
+app.use(cors({
+    origin: "https://fukuno.jig.jp",
+}));
 
 const nowDate = () => {
     let date = new Date();
