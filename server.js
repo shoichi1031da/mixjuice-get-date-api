@@ -27,8 +27,10 @@ app.get("/",(req,res) => {
     if(req.query.i)index = req.query.i;
     index = parseInt(index,10);
     let now = nowDate();
-    for(let i=0;i<now.length;i++){
-        sendDate = sendDate + "[" + (index + i) + "]=" + now[i];
+    for (let t of now) {
+        index = index % 102 ; // Maximum number of elements in an array is 102.
+        sendDate = sendDate + "[" + index + "]=" + t;
+        index++;
     }
     console.log(sendDate);
     res.send(sendDate);
